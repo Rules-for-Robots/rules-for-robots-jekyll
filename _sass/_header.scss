@@ -1,0 +1,98 @@
+
+/* Header
+   ------ */
+.site-header {
+  height: 56px;
+  opacity: 0.97;
+  background-color: #4a525a; /* color choice is a homage to daringfireball.net */
+
+  /* fixed to the top */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-header-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 696px;
+  margin: 0 auto;
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  font-size: 26px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: left;
+
+  @media screen and (max-width: $on-mobile) {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  a {
+    color: #eee;
+
+    &:visited {
+      color: #eee;
+    }
+  }
+
+}
+
+.site-nav {
+  float: right;
+
+  .site-nav-list {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+
+  .site-nav-page {
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    list-style: none;
+    display: inline;
+  }
+
+  .site-nav-page:first-child {
+    padding-left: 0;
+  }
+
+  .site-nav-link {
+    color: #eee;
+    line-height: 60px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media screen and (max-width: $on-mobile) {
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 60px;
+
+    }
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+
+}

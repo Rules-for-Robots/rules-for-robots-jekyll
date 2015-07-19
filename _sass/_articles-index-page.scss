@@ -1,0 +1,58 @@
+.home-page {
+  .site-summary {
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+  .page-heading {
+    margin-top: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  .home-author {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    a {
+      color: #292e33;
+    }
+
+  }
+  .home-by-line {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+
+
+.article-list {
+  margin: 0;
+  padding: 0;
+  .article-item {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    border-bottom: 3px double #eee;
+    list-style: none;
+  }
+  .article-date {
+    margin-bottom: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .article-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+  }
+  .article-summary {
+    margin-top: 5px;
+  }
+}

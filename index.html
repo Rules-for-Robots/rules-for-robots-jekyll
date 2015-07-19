@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home-page page-container">
+  <p class="home-by-line">by <span class="home-author"><a href="/about/">Greg Hemphill</a></span></p>
+
+  <!--<h1 class="site-summary">Rules for Robots is a blog about web design, programming, and other geeky things.</h1>-->
+
+  <h3 class="page-heading">Articles for Humans</h3>
+
+  <ul class="article-list">
+    {% for post in site.posts %}
+      <li class="article-item">
+        <span class="article-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2 class="article-title">
+          <a class="article-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="article-summary">{{ post.summary }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

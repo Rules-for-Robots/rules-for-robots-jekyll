@@ -1,0 +1,149 @@
+article {
+  h1 {
+    font-weight: bold;
+  }
+}
+
+article {
+
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    color: #111;
+    text-rendering: optimizeLegibility;
+  }
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before,
+  h5:before,
+  h6:before {
+    position: absolute;
+    top: auto;
+    color: #f4f4f4;
+    display: none;
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
+
+  h1:before {
+    content: "#";
+    left: -1.0em;
+  }
+  h2:before {
+    content: "##";
+    left: -1.75em;
+  }
+  h3:before {
+    content: "###";
+    left: -2.55em;
+  }
+  h4:before {
+    content: "####";
+    left: -3.4em;
+  }
+  h5:before {
+    content: "#####";
+    left: -4.3em;
+  }
+  h6:before {
+    content: "######";
+    left: -5.10em;
+  }
+}
+
+/* Lists
+   ----- */
+ul {
+  margin-left: -0.5rem;
+}
+ul>li{
+  padding-left: 0.5rem;
+}
+
+ol {
+  margin-left: -0.65rem;
+}
+ol>li{
+  padding-left: 0.65rem;
+}
+
+blockquote {
+  padding: 0 0 0 1.75rem;
+  margin: 0 3rem 1.5rem -2.2rem;
+  color: #787d81;
+  border-left: .5rem solid #b0b2b4;
+}
+
+/* code
+   ---- */
+
+//.highlighter-rouge {
+//  display: inline;
+//}
+
+.highlight{
+  margin-left: -62px;
+  background: #f9f9f9;
+  .gutter {
+    padding-right: 10px;
+    width: 42px;
+    color: #ccc;
+    border-right: 1px solid #fff;
+  }
+  .code {
+    padding-left: 10px;
+  }
+}
+
+//pre {
+//  font-size: 1.6rem;
+//  /*padding-left: 1.7rem;*/
+//  padding-right: 1.7rem;
+//  margin-left: -5rem;
+//  margin-right: -1.7rem;
+//  border: 0;
+//  background: #f9f9f9;
+//}
+/*.container {
+  border-left: 1px solid #333;
+}*/
+
+//.gutter {
+//  width: 32px;
+//}
+
+//.lineno {
+// display: inline-block;
+// text-align: right;
+// color: #ccc;
+//}
+
+/* Posts
+   ----- */
+
+.articles article {
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+  border-bottom: 4px double #eee;
+}
+article .post-title {
+  margin-bottom: 0;
+}
+.post-author,
+.post-date {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.post-by-line {
+  margin-bottom: 20px;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+article img {
+  max-width: 100%;
+}

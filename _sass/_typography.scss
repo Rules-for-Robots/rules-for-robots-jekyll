@@ -1,0 +1,132 @@
+/**
+ * Typography
+ * ========== */
+
+/* Libre Baskerville
+   -----------------
+   from Font Squirrel http://www.fontsquirrel.com/fonts/libre-baskerville */
+@font-face {
+  font-family: 'LibreBaskervilleRegular';
+  src: url('/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.eot');
+  src: url('/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.woff') format('woff'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.ttf') format('truetype'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.svg#LibreBaskervilleRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskervilleItalic';
+  src: url('/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.eot');
+  src: url('/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.woff') format('woff'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.ttf') format('truetype'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.svg#LibreBaskervilleItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskervilleBold';
+  src: url('/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.eot');
+  src: url('/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.woff') format('woff'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.ttf') format('truetype'),
+       url('/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.svg#LibreBaskervilleBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 8px;
+  @media (min-width: 480px) {
+    font-size: 9px;
+  }
+  @media (min-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+body { /* 14/20 */
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #292e33; /* dark slate gray */
+  font-family: 'LibreBaskervilleRegular', 'Georgia Pro', georgia, 'Times New Roman', serif;
+  @media (min-width: 480px) {
+    line-height: 2.9rem;
+  }
+  @media (min-width: 768px) {
+    line-height: 3.0rem;
+  }
+}
+
+p, li {
+  margin-top: 1.5rem;
+}
+
+/* Todo: if they fall back to georgia or etc. it won't be bold :( */
+b, strong, .bold {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'LibreBaskervilleBold', 'Georgia Pro', georgia, 'Times New Roman', serif;
+}
+/* Todo: if they fall back to georgia or etc. it won't be italic :( */
+i, em, .italic {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, 'Times New Roman', serif;
+}
+
+/* all combinations of nesting bold and italic */
+b i, b em, b .italic,
+strong i, strong em, strong .italic,
+.bold i, .bold em, .bold .italic,
+i strong, i b, i .bold,
+em strong, em b, em .bold,
+.italic strong, .italic b, .italic .bold {
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, 'Times New Roman', serif;
+}
+
+a {
+  color: #2d76be;
+  text-decoration: none;
+  &:visited {
+    color: #902dbe;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 { /* 38/41 */
+  font-size: 4.6rem;
+  line-height: 5.6rem;
+}
+
+h2 { /* 32/35 */
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+}
+
+h3 { /* 24/26 */
+  font-size: 3.0rem;
+  line-height: 4.0rem;
+}
+
+h4 { /* 18/19 */
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+
+h5{ /* 14/15 */
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+h6 { /* 12/13 */
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
